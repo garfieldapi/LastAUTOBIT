@@ -100,8 +100,8 @@
                  const data = await response.json();
                  userOnline.innerHTML = '';
                  data.forEach(user => {
+                     const name = "xxxxxxx";
                      const {
-                         name,
                          thumbSrc,
                          time,
                      } = user;
@@ -118,7 +118,7 @@
                      const uptimeUser = document.createElement('p');
                      uptimeUser.className = 'uptime-user';
                      uptimeUser.innerHTML = `Uptime: ${timeFormat(time)}`;
-                     userInfo.appendChild(xxxxxxx);
+                     userInfo.appendChild(name);
                      userInfo.appendChild(uptimeUser);
                      userCard.appendChild(image);
                      userCard.appendChild(userInfo);
